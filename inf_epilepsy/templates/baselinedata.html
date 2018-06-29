@@ -1,0 +1,539 @@
+
+
+{% extends 'base.html' %}
+
+    {% block body %}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+       Developmental history
+
+      </h1>
+
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body">
+                <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="demo_name">Name:</label>
+                  <input type="text" class="form-control" name="demo_name" id="demo_name" placeholder="Enter name">
+                </div>
+                   <div class="form-group col-md-6">
+                  <label for="demo_mrd">MRD No:</label>
+                  <input type="text" class="form-control" name="demo_mrd" id="demo_mrd" placeholder="Enter mrd number">
+                </div>
+                  </div>
+
+                <div class="row">
+                <div class="form-group col-md-3">
+                  <label for="demo_age">Age:</label>
+                  <input type="text" class="form-control" name="demo_age" id="demo_age" placeholder="Enter age">
+                </div>
+                  <div class="form-group col-md-3">
+                    <label for="demo_age">Sex:</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="radiosex" id="radiomale" value="Male" checked="">
+                      Male
+                    </label>
+
+                    <label>
+                      <input type="radio" name="radiosex" id="radiofemale" value="Female">
+                      Female
+                    </label>
+                    <label>
+                      <input type="radio" name="radiosex" id="radiothers" value="Others">
+                      Other
+                    </label>
+                  </div>
+
+                </div>
+
+                  <div class="form-group col-md-6">
+                  <label>Area of residence:</label>
+                  <select class="form-control" name="demo_area">
+                    <option value="rural">Rural</option>
+                    <option value="urban">Urban</option>
+
+                  </select>
+                </div>
+                  </div>
+
+
+                <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="demo_address">Contact Address:</label>
+                  <input type="text" class="form-control" name="demo_address" id="demo_address" placeholder="Enter contact address">
+                </div>
+                   <div class="form-group col-md-6">
+                  <label for="demo_phone">Phone no:</label>
+                  <input type="text" class="form-control" name="demo_phone" id="demo_phone" placeholder="Enter phone number">
+                </div>
+                  </div>
+
+
+                <div class="row">
+                 <div class="form-group col-md-12">
+                  <label for="demo_consult">Consulting doctor:</label>
+
+                  <input type="text" class="form-control" name="demo_consult" id="demo_consult" placeholder="Consulting doctor name">
+                </div>
+
+                </div>
+              </div>
+              <!-- /.box-body -->
+
+
+
+          </div>
+          <!-- /.box -->
+
+
+
+        </div>
+        <!--/.col (left) -->
+        <!-- right column -->
+      </div>
+      <!-- /.row -->
+    </section>
+
+
+
+   <section class="content-header">
+      <h1>
+        Birth history
+
+      </h1>
+
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+
+            <!-- /.box-header -->
+            <!-- form start -->
+
+              <div class="box-body">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                    <label for="cons_radio">Consanguinity:</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="cons_radio" id="cons_radio" value="CM" checked="">
+                      CM
+                    </label>
+
+
+                    <label>
+                      <input type="radio" name="cons_radio" id="cons_radio2" value="NCM">
+                      NCM
+                    </label>
+                  </div>
+
+                </div>
+                   <div class="form-group col-md-6">
+                  <label for="ant_period">Antenatal period:</label>
+                 <div class="radio">
+                    <label>
+                      <input type="radio" name="ant_period" id="ant_period" value="Normal" checked="">
+                      Normal
+                    </label>
+                     <label>
+                      <input type="radio" name="ant_period" id="ant_period2" value="Abnormal">
+                      Abnormal
+                    </label>
+                  </div>
+                </div>
+                  </div>
+
+                <div class="row">
+               <div class="form-group col-md-3">
+                    <label for="spec_term">Specify:</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="spec_term" id="spec_term" value="Term" checked="">
+                      Term
+                    </label>
+
+
+                    <label>
+                      <input type="radio" name="spec_term" id="spec_term2" value="Preterm">
+                      Preterm
+                    </label>
+                  </div>
+
+                </div>
+               <div class="form-group col-md-3">
+                  <label for="birth_weight">Birth weight:</label>
+                  <input type="text" class="form-control" name="birth_weight" id="birth_weight" placeholder="Enter birth weight ">
+                </div>
+
+                 <div class="form-group col-md-6">
+                    <label for="cried">Cried immediately after birth:</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="cried" id="cried" value="Yes" checked="">
+                      Yes
+                    </label>
+
+
+                    <label>
+                      <input type="radio" name="cried" id="cried2" value="No">
+                      No
+                    </label>
+                  </div>
+
+                </div>
+                  </div>
+
+
+                <div class="row">
+
+                 <div class="form-group col-md-6">
+                    <label for="neo_period">Any problem in the neonatal period:</label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="neo_period" name="neo_period">
+                     Seizure
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="neo_period">
+                     Hypoglycemia
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="neo_period">
+                     Sepsis
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="neo_period">
+                     Meningitis
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="neo_period">
+                     Hyperbilirubinemia
+                    </label>
+                  </div>
+                </div>
+                   <div class="form-group col-md-6">
+                    <label for="nicu_admin">NICU admission if any:</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="nicu_admin" id="nicu_admin" value="Yes" >
+                      Yes
+                    </label>
+
+
+                    <label>
+                      <input type="radio" name="nicu_admin" id="nicu_admin2" value="No" checked="">
+                      No
+                    </label>
+                  </div>
+
+                </div>
+                  </div>
+
+
+                <div class="row">
+                 <div class="form-group col-md-6">
+                  <label for="diagnosis">Diagnosis:</label>
+
+                  <input type="text" class="form-control" name="diagnosis" id="diagnosis" >
+                </div>
+
+                   <div class="form-group col-md-3">
+                  <label for="dur_treatment">Duration of treatment:</label>
+
+                  <input type="text" class="form-control" name="dur_treatment" id="dur_treatment" >
+                </div>
+
+                   <div class="form-group col-md-3">
+                    <label for="nicu_admin">Ventilation:</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="ventilation" id="ventilation" value="Yes" >
+                      Yes
+                    </label>
+
+
+                    <label>
+                      <input type="radio" name="ventilation" id="ventilation2" value="No" checked="">
+                      No
+                    </label>
+                  </div>
+
+                </div>
+                </div>
+
+
+                  <div class="row">
+                     <div class="form-group col-md-12">
+                  <label for="vent_details">Details (if yes):</label>
+
+                  <input type="text" class="form-control" name="vent_details" id="vent_details" >
+                </div>
+              </div>
+
+              <!-- /.box-body -->
+
+
+            </form>
+          </div>
+          <!-- /.box -->
+
+
+
+        </div>
+        <!--/.col (left) -->
+        <!-- right column -->
+      </div>
+      <!-- /.row -->
+    </section>
+
+
+    <section class="content-header">
+      <h1>
+        Demographic details
+
+      </h1>
+
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+
+         <table  class="table table-bordered">
+                <tbody>
+                <tr>
+
+                  <th>a).Gross motor:</th>
+
+                </tr>
+                <tr>
+
+                  <td>Head holding:</td>
+                  <td>
+                  <input type="text" class="form-control" name="head_holding" id="head_holding" placeholder="Head Holding">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Turned over (3-5 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="turned_over" id="turned_over" placeholder="Head Holding">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Sit with support (5-6 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="sitsupport" id="sitsupport" placeholder="Sit with support">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Sit without support (6-8 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="sitwithoutsupport" id="sitwithoutsupport" placeholder="Sit without support">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Stand with support (10 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="standsupport" id="standsupport" placeholder="Stand with support">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Walk without support (13 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="walkwithoutsupport" id="walkwithoutsupport" placeholder="Walk without support">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Running (15 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="running" id="running" placeholder="Running">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Climbing stairies (1 1/2-2 years):</td>
+                  <td>
+                  <input type="text" class="form-control" name="climbingstairies" id="climbingstairies" placeholder="Climbing stairies">
+
+
+                  </td>
+
+                </tr>
+
+
+
+
+
+
+                <tr>
+
+                  <th>b).Fine motor adaptation:</th>
+
+                </tr>
+                <tr>
+
+                  <td>Hands kept over (8 weeks):</td>
+                  <td>
+                  <input type="text" class="form-control" name="handkeptover" id="handkeptover" placeholder="Hands kept over">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Tries to research objects (4-5 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="researchobject" id="researchobject" placeholder="Tries to research objects">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Transfer object between hands (7 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="transferhands" id="transferhands" placeholder="Transfer object between hands">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Pincer grasp (8-10 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="pincergrasp" id="pincergrasp" placeholder="Pincer grasp">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Feeds from a cup (15 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="feedsfromcup" id="feedsfromcup" placeholder="Feeds from a cup">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Walk without support (18 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="walkwithoutsupport18" id="walkwithoutsupport18" placeholder="Walk without support">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Uses spoon (18 months):</td>
+                  <td>
+                  <input type="text" class="form-control" name="usesspoon" id="usesspoon" placeholder="Uses spoon">
+
+
+                  </td>
+
+                </tr>
+
+                 <tr>
+
+                  <td>Help to undress (2 years):</td>
+                  <td>
+                  <input type="text" class="form-control" name="helptoundress" id="helptoundress" placeholder="Help to undress">
+
+
+                  </td>
+
+                </tr>
+
+
+
+              </tbody></table>
+
+
+
+        </div>
+        <!--/.col (left) -->
+        <!-- right column -->
+      </div>
+      <!-- /.row -->
+    </section>
+
+
+
+
+
+    </div>
+
+{% endblock %}
